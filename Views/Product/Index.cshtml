@@ -1,0 +1,35 @@
+@{
+    Layout = "_Layout";
+}
+
+<h2>DAFTAR PRODUCT</h2> <br/>
+<a asp-action="Create" class="btn btn-success btn-xs">Tambah Product</a>
+<br/>
+
+<table class="table table-stripped">
+    <tr>
+        <th>Id_Product</th>
+        <th>Nama_Product</th>
+        <th>deskripsi</th>
+        <th>stok</th>
+        <th>harga</th>
+        <th>image</th>
+        <th>Id_Kategori</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var data in Model){
+        <tr>
+            <td>@data.Id_Product</td>
+            <td>@data.Nama_Product</td>
+            <td>@data.deskripsi</td>
+            <td>@data.stok</td>
+            <td>@data.harga</td>
+            <td>@data.image</td>
+            <td>@data.Id_Kategori</td>
+            <td><a asp-action="Details" asp-route-id="@data.Id_Product">Edit</a></td>
+            <td><a asp-action="Delete" asp-route-Id_Product="@data.Id_Product">Hapus</a></td>
+        
+        </tr>
+    }
+</table>

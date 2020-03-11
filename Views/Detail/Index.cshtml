@@ -1,0 +1,110 @@
+@{
+    Layout ="_Layout";
+}
+
+<title>
+    Shop Item - Template Preview - Start Bootstrap
+  </title>
+ 
+  <!-- Page Content -->
+
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div class="card mt-4">
+          <img class="card-img-top img-fluid" src="img/bandana.jpg" alt="">
+          <div class="card-body">
+            <h3 class="card-title">Bandana Warna</h3>
+            <h4>Rp. 20.000</h4>
+            <p class="card-text">Preorder Bandana Warna</p>
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+          </div>
+        </div>
+        <!-- /.card -->
+        <style type="text/css">
+        .pic{
+            width:50px;
+            height:50px;
+        }
+        .picbig{
+            position: absolute;
+            width:0px;
+            -webkit-transition: width 0.3s linear 0s;
+            transition: :width 0.3s linear 0s;
+            z-indexx10;
+        }
+        .pic:hover + .picbig{
+            width:600px;
+        }
+        .container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+        </style>
+        <div class="card-body">
+        <body>
+            <img class="pic" src="img/bandanazoom.jpg" alt="bandana">
+            <img class="picbig" src="img/bandanazoom.jpg" alt="bandana">
+        </body>
+        <div>
+            <p>Move the crusor to icon item to see detailed look of the item</p>
+        </div>
+        </div>
+        <br><br><br><br><br><br><br>
+       
+
+
+         <div class="container">
+        <img src="img/milos.jpg" alt="Avatar" style="width:90px">
+        <p><span>Richardo Milos.</span> Visitor</p>
+        <p>Terimakasih barang sudah sampai dan sesuai dengan gambar.</p>
+        </div>
+
+        <div class="container">
+         <img src="img/pp.jpg" alt="Avatar" style="width:90px">
+         <p><span >Vale Tanesha.</span> CEO Vlane.choco.</p>
+        <p>Terimakasih sudah memberikan review pada kami.</p>
+        </div> 
+        <!-- /.card -->
+
+         </div>
+      <!-- /.col-lg-9 -->
+
+        </div>
+        
+        <br><br><br>
+        <div>
+        <h2>Add comment reviews</h2>
+
+<form method="POST" action="/Tampil">
+    <div class="form-group">
+        <label for="FirstName">First Name :</label>
+        <input type="text" class="form-control" 
+            name="FirstName" />
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name :</label>
+        <input type="text" class="form-control" 
+            name="LastName" />
+    </div>
+    <div class="form-group">
+        <label for="Address">Email :</label>
+        <input type="text" class="form-control" 
+            name="Address" />
+    </div>
+
+    
+    <div class="form-group">
+        <label for="Telp">Titles :</label>
+        <input type="text" class="form-control" name="Telp" />
+    </div>
+    
+    
+    <button class="btn btn-primary">Submit</button>
+</form>
+</div>    
+        
+
+
